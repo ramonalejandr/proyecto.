@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/biblioteca.css">
+
+    <title>hola mundo</title>
+    <style>
+        .linea-negra {
+            width: 100%;
+            background-color: black;
+            color: white;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .linea-negra .left {
+            margin-left: 20px;
+        }
+        .linea-negra .right {
+            margin-right: 20px;
+        }
+        .linea-negra a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">
+            <a href="/views/biblioteca/index.html">Logo</a>
+        </div>
+        <div class="menu">
+            <nav class="barra">
+                <a href="/views/biblioteca/index.html">Inicio</a>
+                <a href="#">
+                    <div class="dropdown">
+                        <button class="dropbtn">Géneros</button>
+                        <div class="dropdown-content">
+                            <div class="column">
+                                <a href="#">Acción</a>
+                                <a href="#">Animación</a>
+                                <a href="#">Aventura</a>
+                                <a href="#">Bélico</a>
+                                <a href="#">Ciencia ficción</a>
+                                <a href="#">Crimen</a>
+                                <a href="#">Terror</a>
+                                <a href="#">Suspenso</a>
+                                <a href="#">Romance</a>
+                            </div>
+                            <div class="column">
+                                <a href="#">Comedia</a>
+                                <a href="#">Drama</a>
+                                <a href="#">Documental</a>
+                                <a href="#">Familiar</a>
+                                <a href="#">Fantasía</a>
+                                <a href="#">Historia</a>
+                                <a href="#">Música</a>
+                                <a href="#">Misterio</a>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </nav>
+            <div class="search-container">
+                <input type="text" id="searchInput" onkeyup="searchFunction()" placeholder="Buscar...">
+            </div>
+            <div>
+                <a href="/views/perfil/perfil.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user-circle" width="36"
+                        height="36" viewBox="0 0 24 24" stroke-width="1.5" stroke="#00abfb" fill="none"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
+                        <path d="M12 10m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+                        <path d="M6.168 18.849a4 4 0 0 1 3.832 -2.849h4a4 4 0 0 1 3.834 2.855" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+
+    </header>
+
+    <div class="grid-container">
+        <!-- Row 1 -->
+        <div class="square">1</div>
+        <div class="square">2</div>
+        <div class="square">3</div>
+        <div class="square">4</div>
+
+        <!-- Row 2 -->
+        <div class="square">5</div>
+        <div class="square">6</div>
+        <div class="square">7</div>
+        <div class="square">8</div>
+
+        <!-- Row 3 -->
+        <div class="square">9</div>
+        <div class="square">10</div>
+        <div class="square">11</div>
+        <div class="square">12</div>
+    </div>
+
+    <div class="linea-negra">
+        <div class="left">
+            ramon alejandro avila mayo<br>
+            DE LOS SANTOS CACERES VICTOR MANUEL<br>
+            © 2024
+        </div>
+        <div class="right">
+            <a href="/aviso_privacidad/index.html">Aviso de privacidad</a>
+            <a href="/termino_condicion/index.html">Términos y condiciones</a>
+            <a href="#">Mapa de sitio</a>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil de Usuario</title>
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/perfil.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">
+            <a href="/views/biblioteca/index.html">Logo</a>
+        </div>
+        <div class="menu">
+            <nav class="barra">
+                <a href="/views/biblioteca/index.html ">Inicio</a>
+                 <a href="#">Categoría</a>
+            </nav>
+            <div class="search-container">
+                <input type="text" id="searchInput" onkeyup="searchFunction()" placeholder="Buscar...">
+            </div>
+            <div>
+                <a href="/views/perfil/perfil.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user-circle" width="36"
+                        height="36" viewBox="0 0 24 24" stroke-width="1.5" stroke="#00abfb" fill="none"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
+                        <path d="M12 10m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+                        <path d="M6.168 18.849a4 4 0 0 1 3.832 -2.849h4a4 4 0 0 1 3.834 2.855" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+
+    </header>
+
+    <div class="perfil-container">
+        <div class="perfil-header">
+            <div class="foto-perfil">Foto Perfil</div>
+            <div class="info-usuario">
+                <div class="campo">Nombre de usuario</div>
+                <div class="campo">Correo electrónico</div>
+                <div class="campo">Teléfono</div>
+                <a href="../perfil/editar_perfil.html"> 
+                <button class="boton-editar" >Editar</button>
+                </a>
+            </div>
+            
+        </div>
+        <div class="historial">
+            <div class="titulo-historial">Historial</div>
+            <div class="libros">
+                <div class="libro">Libro 1</div>
+                <div class="libro">Libro 2</div>
+                <div class="libro">Libro 3</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/js/main.js"></script>
+    <script>
+        function searchFunction() {
+        }
+
+        function editarPerfil() {
+            alert("Editar perfil");
+        }
+
+        function handleUserButtonClick() {
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,179 @@
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ body {
+    font-family: Arial, sans-serif;
+    background-image: url(/img/perfil.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh; 
+    display: flex;
+    flex-direction: column;  
+    align-items: center;
+    margin: 0;
+}
+
+ .mascara {
+   background-color: rgb(197, 38, 38);
+}
+
+ .header {
+    width: 100%;  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: rgba(4, 82, 25, 0.9); /*    */
+    position: fixed;    
+    top: 0; 
+    z-index: 1000;  
+}
+
+ .logo a {
+    text-decoration: none;
+    color: #000;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 10px 20px;
+    background-color: rgba(234, 225, 225, 0.8); /*  */
+    border-radius: 5px;
+}
+
+ .barra {
+    display: flex;
+    align-items: right;
+}
+
+ .barra a {
+    text-decoration: none;
+    color: #000;
+    font-size: 18px;
+    padding: 10px 20px;
+    margin-left: 10px;
+    background-color: rgba(244, 235, 235, 0.8); /*   */
+    border-radius: 5px;
+}
+
+ .search-container {
+    margin: 10px;
+    position: relative; /* Ensure position context for absolute positioning */
+}
+
+ #searchInput {
+    width: 75%;
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+ .user-button {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+ .user-button:hover {
+    opacity: 0.8;
+}
+
+ .user-button svg {
+    fill: #010709;  
+    width: 50px;
+    height: 40px;
+}
+
+ .barra a:hover {
+    background-color: rgba(224, 224, 224, 0.8);
+}
+
+
+ .perfil-container {
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 20px;
+    width: 500px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 100px;  
+    text-align: center;  
+}
+
+ .perfil-header {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* Foto perfil   */
+.foto-perfil {
+    width: 150px;
+    height: 150px;
+    background-color: #ddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+    font-weight: bold;
+}
+
+ .info-usuario {
+    flex: 1;
+    text-align: left;  
+}
+
+ .campo {
+    background-color: #f0f0f0;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+ .historial {
+    margin-top: 20px;
+    text-align: left;  
+    font-weight: bold;  
+}
+
+ .titulo-historial {
+    margin-bottom: 10px;
+}
+
+ .libros {
+    display: flex;
+    justify-content: space-between;
+}
+
+ .libro {
+    background-color: #f0f0f0;
+    width: 30%;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+/* Botón editar   */
+.boton-editar {
+    background-color: #4CAF50;  
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.boton-editar:hover {
+    background-color: #45a049;
+}
+.menu{
+    display: flex;
+    align-items: center;
+}
